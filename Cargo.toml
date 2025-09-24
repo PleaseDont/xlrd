@@ -1,0 +1,29 @@
+[package]
+name = "xlrd"
+version = "0.1.0"
+edition = "2024"
+authors = ["Vincent Sun <farhuge@outlook.com>"]
+repository = "https://github.com/PleaseDont/xlrd"
+documentation = "https://docs.rs/xlrd"
+description = "A historical Excel BIFF8 xls format file reader in pure Rust"
+license = "MIT"
+readme = "README.md"
+keywords = ["excel", "xls", "biff8", "reader"]
+categories = ["encoding", "parsing", "text-processing"]
+
+[dependencies]
+modular-bitfield = "0.12.0"
+binrw = "0.15.0"
+cfb = "0.11.0"
+codepage = "0.1.2"
+encoding_rs = "0.8.35"
+enum-display = "0.1.4"
+thiserror = "2.0.16"
+tracing = { version = "0.1.41", optional = true }
+umya-spreadsheet = "2.3.3"
+
+[features]
+tracing = ["dep:tracing"]
+
+[package.metadata.docs.rs]
+features = ["tracing"]
