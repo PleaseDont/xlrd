@@ -412,7 +412,7 @@ pub fn open(path: impl AsRef<Path>) -> Result<Spreadsheet> {
                         row.set_hidden(true);
                     } else {
                         // issure with `set_height` not working
-                        // row.set_height(data.height as f64 / 20.);
+                        row.set_height(data.height as f64 / 20.);
                     }
                     row.set_thick_bot(data.info.top_bdr());
                 }
