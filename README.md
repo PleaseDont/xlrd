@@ -30,10 +30,10 @@ cargo add umya-spreadsheet
 
 Or add the following line to your Cargo.toml:
 ```toml
-xlrd = "0.1.0"
+xlrd = "0.1"
 
 # If need to view the reading process
-xlrd = { version = "0.1.0", features = ["tracing"] }
+xlrd = { version = "0.1", features = ["tracing"] }
 
 # When need to modify the data or formatting, may also need to add
 umya-spreadsheet = "2"
